@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Candle| Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <link rel = "stylesheet" href="css/system2.css">
+
+</head>
+<body>
+
+    <div class="nav_container">
+
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <button class="go-back-btn" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i> 
+            Go Back
+        </button>
+    
+    </div>
+      
+        <!-- Audio Button -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+       <button class="Audio-btn" onclick="toggleAudio()">
+           <i class="fas fa-volume-up"></i> 
+           Audio
+       </button>
+    <!-- Cassette Sound Effect -->
+<audio id="cassette-sound">
+    <source src="assets/cassette-insert.wav" type="audio/wav">
+</audio>
+       <!-- Audio Panel -->
+<div class="Audio-panel" id="AudioPanel">
+    <h3 class="title-panel">Cassette Player!</h3>
+    <button id="toggle-button" class="toggle-btn">Turn Music Off</button>
+
+    <div class="song-container">
+        <label for="song-selector">
+            <i class="fas fa-music"></i> Choose a song:
+        </label>
+        <select id="song-selector">
+            <option value="none">Blank</option>
+            <option value="assets/P.m4a">🎼  1 : Alpha wave</option>
+            <option value="assets/S.m4a">🎼  2 : Lofi-beat</option>
+        </select>
+    </div>
+
+    <div class="volume-container">
+        <label for="volume-slider">
+            <i class="fas fa-volume-up"></i> Volume
+        </label>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.02" value="1">
+    </div>
+</div>
+
+    
+        <!-- Audio element -->
+        <audio id="background-music" loop>
+           <source src="assets/P.m4a" type="audio/m4a">
+           <source src="assets/S.m4a" type="audio/m4a">
+           Your browser does not support the audio element.
+       </audio>
+    
+    
+
+    
+        <div class="contain"> 
+        <h1 class="title">Melt ME! The Candle!</h1> 
+        <h2 class="describe1">Read 25:00 | Rest 5:00</h2>
+       <!--hr-->
+        <div class="fixed-candle">
+           <div class="candle" id="candle">
+               <div class="flame" id="flame"></div>
+           </div>
+       </div>
+    
+       <p class="timer" id="timer">25:00</p>
+    
+           <div class="button-wrapper">
+               <button id="start">Start</button>
+               <button id="stop">Stop</button>
+               <button id="more">More Rest</button>
+               <button id="reset">Reset</button>
+               
+           </div>
+       </div>
+    
+
+       
+    <script src="js/appSystem2.js"></script>
+
+
+
+</body>
+</html>

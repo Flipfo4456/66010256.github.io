@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <h1>My Schedule</h1>
+        <p id="currentDate"></p>
+        <p id="currentTime"></p>
+    </header>
+
+    <div id="taskList"></div>
+
+    
+<!-- <button id="addTask" onclick="location.href='add_task.html'">+</button> -->
+<button class="icon-btn add-btn" onclick="location.href='add_task.html'">
+    <div class="add-icon"></div>
+    <div class="btn-txt">Add</div>
+</button>
+
+
+<div>
+</div>
+    <nav class="navbar">
+        <a href="home.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="analytic.html" class="nav-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Analytics</span>
+        </a>
+        <a href="Todo.html" class="nav-item">
+            <i class="fas fa-clipboard-list"></i>
+            <span>To-Do-list</span>
+        </a>
+    </nav>
+
+    <script src="js/addHome.js"></script>
+</body>
+</html>

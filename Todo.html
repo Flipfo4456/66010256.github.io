@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/Todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body>
+<div class="container">
+
+    <h2 class="title">To-Do List!</h2>
+    <div class="container.addBar">
+        <input type="text" id="taskInput" placeholder="Add what to do.." />
+        <button class = "add-button" onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+</div>
+
+      <!-- ใช้ Navbar แบบเดียวกับ Home -->
+      <nav class="navbar">
+        <a href="home.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="analytic.html" class="nav-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Analytics</span>
+        </a>
+        <a href="Todo.html" class="nav-item active">
+            <i class="fas fa-clipboard-list"></i>
+            <span>To-Do-list</span>
+        </a>
+      </nav>
+<div class="bg-container">
+
+    <label class="cross-container">
+        <input id="cbtest-19" type="checkbox"  />
+        <div class="checkmark"></div>
+        <h3>No fire or smoke!</h3>
+      </label>
+      
+</div>
+
+
+    <script src="js/Todo.js"></script>
+</body>
+</html>

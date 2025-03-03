@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1740982023467,
+    "subject": "Sci",
+    "color": "#F4A261",
+    "completed": false
+  },
+  {
+    "id": 1740997910645,
+    "subject": "Math",
+    "color": "#5A91E6",
+    "completed": false
+  }
+]
