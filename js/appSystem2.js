@@ -53,7 +53,7 @@ isMusicPlaying = true; // Ensure the flag is updated
 cassetteSound.play();
 cassetteSound.currentTime = 0; // Reset sound to start
 cassetteSound.onended = () => {
-    
+   
     audio.play();
     button.textContent = "Turn Music On";
     button.style.backgroundColor = "rgb(139, 209, 35)";
@@ -377,7 +377,7 @@ reset.addEventListener("click", resetTimer);
         
 // 📌 ปุ่มกลับหน้า Home
 function goBack() {
-    window.location.href = "home.html";
+    window.location.href = "index.html";
 }
 
 
