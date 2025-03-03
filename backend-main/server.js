@@ -5,6 +5,16 @@ const fs = require("fs");
 const app = express();
 const PORT = 3000;
 
+const express = require("express");
+// const app = express();
+
+app.get("/", (req, res) => {
+    res.json({ message: "Hello, this is your backend!" });
+});
+
+// Export as a serverless function
+module.exports = app;
+
 // ใช้งาน Middleware
 app.use(cors({ origin: "*" })); // อนุญาตให้ทุกโดเมนเข้าถึง API
 app.use(express.json());
