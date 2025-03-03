@@ -1,20 +1,21 @@
 /* Reset default styles */
 * {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
-}
-
-html, body {
+  }
+  
+  html, body {
     overflow: auto;
     scrollbar-width: none; /* Firefox */
-}
-
-html::-webkit-scrollbar, body::-webkit-scrollbar {
+  }
+  
+  html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: none; /* Hide scrollbar for WebKit browsers */
-}
-/* Body styling */
-body {
+  }
+  /* Body styling */
+  body {
+    margin-bottom: 30px;
     font-family: 'Fredoka One', cursive;/*...............................................*/
     min-height: 100vh;
     background: linear-gradient(-135deg, rgb(40, 40, 40), #000000);
@@ -164,7 +165,7 @@ header {
     height: 4px;
     width: 10px;
     top: calc(50% - 2px);
-    background: rgb(255, 0, 0);
+    background: rgb(68, 255, 0);
   }
   
   .add-btn::after {
@@ -208,7 +209,7 @@ header {
     width: 2px;
     top: calc(50% - 10px);
     /* background: seagreen; */
-    background: rgb(255, 0, 0);
+    background: rgb(68, 255, 0);
     overflow: hidden;
   }
   
