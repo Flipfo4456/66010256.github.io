@@ -3,7 +3,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const saveTaskBtn = document.getElementById("saveTask"); // 📌 ใช้ใน add_task.html
     const subjectInput = document.getElementById("subject"); // 📌 ใช้ใน add_task.html
     const colorButtons = document.querySelectorAll(".color-option"); // 📌 ใช้ใน add_task.html
+    const currentDateElement = document.getElementById("currentDate");
+    const currentTimeElement = document.getElementById("currentTime");
     let selectedColor = "#5A91E6"; // ค่าเริ่มต้น
+
+    function updateCurrentTime() {
+        const now = new Date();
+        const options = { weekday: 'long', day: 'numeric', month: 'long' };
+        if (currentDateElement && currentTimeElement) {
+            currentDateElement.textContent = now.toLocaleDateString("en-US", options);
+            currentTimeElement.textContent = now.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit' });
+        }
+    }
+    setInterval(updateCurrentTime, 1000);
+    updateCurrentTime();
 
     const API_URL = "http://localhost:3000/tasks"; // 🔗 URL ของ Backend
 
