@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (response.ok) {
                 console.log("✅ บันทึก Task สำเร็จ:", newTask);
-                window.location.href = "home.html"; // 🔄 กลับไปหน้า Home
+                window.location.href = "index.html"; // 🔄 กลับไปหน้า Home
             } else {
                 console.error("❌ บันทึก Task ล้มเหลว");
             }
